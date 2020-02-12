@@ -1,0 +1,10 @@
+name: Shiny WordCloud
+description: This is a test of Shiny Apps in Nafigos
+build:
+- image: simpsonw/shiny-wordcloud
+  dockerfile: "Dockerfile"
+---
+- image: {{image 1}}
+  name: shiny-wordcloud
+  ports:
+  - containerPort: 80
